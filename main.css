@@ -20,6 +20,10 @@ header{
     font-weight: bolder;
 }
 
+h1{
+    text-align: center;
+}
+
 .container{
     display: flex;
     flex: 1;
