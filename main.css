@@ -95,3 +95,95 @@ footer{
     margin-top: 20px;
     font-weight: bold;
 }
+
+
+/* form page styles */
+
+.form-page-layout{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-wrapper{
+    background-color: lightgrey;
+    padding: 20px;
+    width:60%;
+    border-radius: 5px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-wrapper label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-wrapper-input[type="text"],
+.form-wrapper-input[type="email"],
+.form-wrapper select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.checkbox-group label{
+    display: inline;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.buttons{
+    margin-top: 20px
+}
+
+/* error box styles */
+
+.error-wrapper{
+    width: 35%;
+}
+
+.error-box{
+    background-color: yellow;
+    border: 1px solid grey;
+    padding: 15px;
+    color:red;
+    font-weight: bold;
+    text-align: left;
+}
+
+.error-title{
+    color: red;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.results-box {
+    border: 2px solid red;       
+    background-color: lightgrey; 
+    padding: 20px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.results-header {
+    color: green;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.results-content {
+    color: green;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.results-content p {
+    margin: 5px 0;
+}

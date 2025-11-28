@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title> Εκδήλωση Ενδιαφέροντος</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header> Εκδήλωση Ενδιαφέροντος</header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Αρχική Σελίδα</a></li>
+                    <li><a href="Athens.html">Αθήνα</a></li>
+                    <li><a href="Volos.html">Βόλος</a></li>
+                    
+                </ul>
+            </nav>
+            
+            <section>
+                <div class="form-page-layout">
+                    <div class="form-wrapper">
+                        <p>(Παρακαλώ σημπληρώστε με αγγλικούς χαρακτήρες)</p>
+                       <form id="interestForm" action="data.html" method="GET" onsubmit="return validateForm(event)">
+                        
+                        <div class="form-group">
+                            <label for="fullname">Ονοματεπώνυμο:</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="region">Περιοχή:</label>
+                            <select id="region" name="region">
+                                <option value="">-- Επιλογή --</option>
+                                <option value="Macedonia">Μακεδονία</option>
+                                <option value="Attica">Αττική</option>
+                                <option value="Thessaly">Θεσσαλία</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Τομείς Ενδιαφέροντος:</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="archaeology" name="interests" value="archaeology">
+                                <label for="archaeology">Αρχαιολογικοί χώροι</label><br>
+                                
+                                <input type="checkbox" id="lakes" name="interests" value="lakes">
+                                <label for="lakes">Λίμνες κολύμβησης</label><br>
+                                
+                                <input type="checkbox" id="food" name="interests" value="food">
+                                <label for="food">Φαγητό</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Διεύθυνση e-mail:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="buttons">
+                            <input type="submit" value="Υποβολή">
+                            <input type="reset" value="Καθάρισμα" onclick="clearErrors()">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="error-wrapper" id="errorPanel">
+                    <div class="error-box">
+                        <span class="error-title">Σφάλματα:</span>
+                        <ul id="errorList"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+                <p><a href="forma.html">Εκδήλωση Ενδιαφέροντος</a></p>
+            </aside>
+    </div>
+
+    <footer>
+        Copyright Bartzialis Christos 
+    </footer>
+
+    <script src="main.js"></script>
+    </body>
+</html>
